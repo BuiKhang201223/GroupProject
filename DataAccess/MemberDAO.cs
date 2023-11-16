@@ -92,6 +92,8 @@ namespace DataAccess
                 throw new Exception("Member does not already exists.");
             }
         }
+        //------------------------------------------------------------------
+        //List Member by City and Country
         public List<Member> GetMemberByCityAndCountry(string city, string country)
         {
             List<Member> FList = new List<Member>();

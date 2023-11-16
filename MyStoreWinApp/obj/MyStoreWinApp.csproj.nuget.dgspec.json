@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\MyStoreWinApp\\MyStoreWinApp.csproj": {}
+    "D:\\GroupProject\\GroupProject\\MyStoreWinApp\\MyStoreWinApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\BusinessObject\\BusinessObject.csproj": {
+    "D:\\GroupProject\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "D:\\GroupProject\\GroupProject\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\BusinessObject\\BusinessObject.csproj",
-        "packagesPath": "C:\\Users\\huvo2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\BusinessObject\\obj\\",
+        "projectPath": "D:\\GroupProject\\GroupProject\\BusinessObject\\BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\Phuc\\.nuget\\packages\\",
+        "outputPath": "D:\\GroupProject\\GroupProject\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\huvo2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Phuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -94,20 +93,20 @@
         }
       }
     },
-    "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\DataAccess\\DataAccess.csproj": {
+    "D:\\GroupProject\\GroupProject\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\GroupProject\\GroupProject\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\huvo2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\DataAccess\\obj\\",
+        "projectPath": "D:\\GroupProject\\GroupProject\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Phuc\\.nuget\\packages\\",
+        "outputPath": "D:\\GroupProject\\GroupProject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\huvo2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Phuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -116,15 +115,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\BusinessObject\\BusinessObject.csproj"
+              "D:\\GroupProject\\GroupProject\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "D:\\GroupProject\\GroupProject\\BusinessObject\\BusinessObject.csproj"
               }
             }
           }
@@ -158,20 +156,20 @@
         }
       }
     },
-    "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\MyStoreWinApp\\MyStoreWinApp.csproj": {
+    "D:\\GroupProject\\GroupProject\\MyStoreWinApp\\MyStoreWinApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\MyStoreWinApp\\MyStoreWinApp.csproj",
+        "projectUniqueName": "D:\\GroupProject\\GroupProject\\MyStoreWinApp\\MyStoreWinApp.csproj",
         "projectName": "MyStoreWinApp",
-        "projectPath": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\MyStoreWinApp\\MyStoreWinApp.csproj",
-        "packagesPath": "C:\\Users\\huvo2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\MyStoreWinApp\\obj\\",
+        "projectPath": "D:\\GroupProject\\GroupProject\\MyStoreWinApp\\MyStoreWinApp.csproj",
+        "packagesPath": "C:\\Users\\Phuc\\.nuget\\packages\\",
+        "outputPath": "D:\\GroupProject\\GroupProject\\MyStoreWinApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\huvo2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Phuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -180,15 +178,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\DataAccess\\DataAccess.csproj"
+              "D:\\GroupProject\\GroupProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\GroupProject\\GroupProject\\DataAccess\\DataAccess.csproj"
               }
             }
           }
