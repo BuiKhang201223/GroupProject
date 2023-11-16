@@ -19,22 +19,6 @@ namespace MyStoreWinApp
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            IConfiguration config = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", true, true)
-                .Build();
-
-            var admin = new Member
-            {
-                Email = config["DefaultAccount:Email"],
-                Password = config["DefaultAccount:password"]
-            };
-
-
-
-            // add employees to richtextbox
-
-
             var members = memberRepository.GetMembers();
             bool isMem = false;
 
@@ -42,10 +26,6 @@ namespace MyStoreWinApp
             {
                 if (i.MemberName.Equals(txtUserName.Text) && i.Password.Equals(txtPassword.Text))
                 {
-                    //    frmMemberManagement frm = new frmMemberManagement()
-                    //{
-                    //    isAdmin = false
-                    //};
                     isMem = true;
                     frmMemberDetail frm = new frmMemberDetail
                     {
@@ -54,21 +34,21 @@ namespace MyStoreWinApp
                         MemberInfor = i,
                         MemberRepository = memberRepository
                     };
-                    MessageBox.Show("Login Successfully!", "Login Successfully!", MessageBoxButtons.OK);
+                    MessageBox.Show("Login Successfully as a member!", "Login Successfully!", MessageBoxButtons.OK);
                     this.Hide();
                     frm.FormClosed += (s, args) => this.Show();
                     frm.ShowDialog();
                     break;
 
                 }
-                else if (admin.Email.Equals(txtUserName.Text) && admin.Password.Equals(txtPassword.Text))
+                else if (txtUserName.Text.Equals("admin@gmail.com") && txtPassword.Text.Equals("1"))
                 {
                     frmMemberManagement frm = new frmMemberManagement()
                     {
                         isAdmin = true
                     };
                     isMem = true;
-                    MessageBox.Show("Login Successfully!", "Login Successfully!", MessageBoxButtons.OK);
+                    MessageBox.Show("Login Successfully as a admin!", "Login Successfully!", MessageBoxButtons.OK);
                     this.Hide();
                     frm.FormClosed += (s, args) => this.Show();
                     frm.ShowDialog();
