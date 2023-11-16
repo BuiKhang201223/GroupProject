@@ -74,10 +74,14 @@ namespace MyStoreWinApp
                             return;
                         }
                         MemberRepository.InsertMember(member);
+                        MessageBox.Show("Add successfully!", "ahihi", MessageBoxButtons.OK);
+                        Close();
                     }
                     else
                     {
                         MemberRepository.UpdateMember(member);
+                        MessageBox.Show("Update successfully!", "ahihi", MessageBoxButtons.OK);
+                        Close();
                     }
                 }
                 else
@@ -93,6 +97,7 @@ namespace MyStoreWinApp
             {
                 MessageBox.Show(ex.Message, InsertOrUpdate == false ? "Add a new member" : "Update a member");
             }
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e) => Close();
