@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "EBI+/SKYacmGw5VHbDL6mBop9z7vZFjsBoSxpN/Mqq/LQysp8Ko3Vf7vlkrEBtfPByxyuSQ8GOgWju3CYd+kmg==",
+  "dgSpecHash": "yKEDI14wLmkQdzOTkKas08dJDd+Jcj51wldg0rueRpqC6gb8OL2itv1FPgC6gvpJq+Xw9WyR5u8/9m92rUfy2g==",
   "success": true,
   "projectFilePath": "C:\\Users\\huvo2\\source\\repos\\Ass01Solution\\MyStoreWinApp\\MyStoreWinApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\huvo2\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\huvo2\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\huvo2\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\huvo2\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\huvo2\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\huvo2\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\huvo2\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "C:\\Users\\huvo2\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "C:\\Users\\huvo2\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",

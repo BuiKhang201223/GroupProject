@@ -1,4 +1,7 @@
-﻿using BusinessObject;
+﻿using AutoMapper;
+using BusinessObject;
+using BusinessObject.DTO;
+using BusinessObject.Mapper;
 using DataAccess.Repository;
 using System;
 using System.Collections.Generic;
@@ -16,16 +19,14 @@ namespace MyStoreWinApp
     {
         public bool isAdmin { get; set; }
         IMemberRepository memberRepository = new MemberRepository();
-        //Create a data source
         BindingSource source;
 
-        //----------------------------------------
 
         public frmMemberManagement()
         {
             InitializeComponent();
         }
-        //----------------------------------------
+
         private void frmMemberManagement_Load(object sender, EventArgs e)
         {
             if (isAdmin == false)
@@ -99,11 +100,28 @@ namespace MyStoreWinApp
         public void LoadMemberList()
         {
             var members = memberRepository.GetMembers();
+            if (members.ToList().Count == 0)
+            {
+                dgvMemberList.DataSource = null;
+                return;
+            }
+            var config = new MapperConfiguration(cfg =>
+            {
+                MemberConfig.createMap(cfg);
+            });
+
+            var mapperMember = config.CreateMapper();
+
+            var memDTOs = members.Select(
+                mem => mapperMember
+                .Map<Member, MemberDTO>(mem)
+                );
+
 
             try
             {
                 source = new BindingSource();
-                source.DataSource = members.OrderByDescending(member => member.MemberName);
+                source.DataSource = memDTOs.OrderByDescending(member => member.MemberName);
                 txtMemberID.DataBindings.Clear();
                 txtMemberName.DataBindings.Clear();
                 txtPassword.DataBindings.Clear();
@@ -123,7 +141,7 @@ namespace MyStoreWinApp
                 dgvMemberList.DataSource = source;
                 if (isAdmin == false)
                 {
-                    if (members.Count() == 0)
+                    if (memDTOs.Count() == 0)
                     {
                         ClearText();
                         btnDelete.Enabled = false;
@@ -135,7 +153,7 @@ namespace MyStoreWinApp
                 }
                 else
                 {
-                    if (members.Count() == 0)
+                    if (memDTOs.Count() == 0)
                     {
                         ClearText();
                         btnDelete.Enabled = false;
@@ -169,8 +187,9 @@ namespace MyStoreWinApp
                 MemberRepository = memberRepository
             };
             frmMemberDetails.Show();
-            LoadMemberList();
             source.Position = source.Count - 1;
+            dgvMemberList.DataSource = null;
+            LoadMemberList();
 
         }
         private void btnDelete_Click(object sender, EventArgs e)
